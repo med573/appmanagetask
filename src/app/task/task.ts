@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component,  EventEmitter,  Input, Output} from '@angular/core';
 
 @Component({
   selector: 'app-task',
@@ -14,8 +14,12 @@ export class Task {
 markAsDone() {
 this.isDone = !this.isDone;
 }
-delteTask(){
-this.remove.emit();
+
+deleteTask(){
+
+  this.remove.emit()
+
 }
+
 
 }

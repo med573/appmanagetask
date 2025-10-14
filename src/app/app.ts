@@ -18,15 +18,14 @@ export class App {
   { id:3, title: 'Celebrate!', done: true }
   ];
 
-
   addNewTask(){
-     this.i = this.tasks.length;
-     this.i ++;
-    this.tasks.push( { id:this.i, title: 'new Task!', done: false })
-  }
-  
-  removeTask(id:number){
-    this.tasks.splice(id,1);
+
+    this.tasks.push({ id:4,title: 'new task', done: false })
 
   }
+
+  removeTask(idx:number){
+   this.tasks.splice(idx,1)
+  }
+
 }
